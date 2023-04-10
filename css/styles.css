@@ -5,7 +5,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  border: 1px solid red;
+  
 }
 /* FONTS */
 html{
@@ -13,10 +13,7 @@ html{
   /* font-family: sans-serif; */
   font-size: 62.5%; /*1rem = 10px*/
 }
-body{
- width: 480px;
- border: 1px solid blue;
-}
+
 main{
   width: 100%;
   margin: 0 auto;
@@ -29,14 +26,17 @@ ol, ul{
 a{
   text-decoration: none;
 }
+/* -------------------------------------------------------------------------------------------------------------- */
+
 .nav{
   display:none;
-
 }
+
 .header{
-  /* margin: 25px; */
+  margin: 25px;
   display: flex;
   justify-content: space-around;
+  padding: 15px;
   
   
 }
@@ -45,6 +45,63 @@ a{
   height: 40px;
  
 }
+/* --------------------------mediaqueryHeader---------------- */
+@media(min-width:1440px){
+  .header{padding-left: 70px;}
+  .nav{
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 65px;
+    margin: 10px;
+    height: 40px;
+    
+    }
+  .burguer{
+    display: none;
+  }
+   .ulNav{
+    display: flex;
+    width: 550px;
+} 
+  .listHeader{
+      border: 5px;
+      padding: 5px;
+      margin: 10px;
+      width: 86px;
+      height: 23px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 176.1%;
+      letter-spacing: .5px;
+     }
+.logo{
+  position: absolute;
+  width: 73px;
+  left: 190px;
+  top: 74.5px;
+  padding-bottom: 0px;
+  
+  
+  
+}
+button{
+  display: flex;
+  align-self: flex-end;
+  width: 134px;
+  height: 39px;
+  align-items: center;
+  justify-content: center;
+  background-color: #8b48bf;
+  border-radius: 50px;
+  color:#ffffff;
+  border: none;
+  font-weight:500;
+  letter-spacing: 1px;
+}
+  }
 .secOne{
   display: flex;
   align-items: center;
@@ -110,6 +167,39 @@ font-style: normal;
 
   
 }
+
+/* ------------------------sectionOne-------------------------------- */
+@media(min-width:1440px){
+  .secOne{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+  }
+  .imagenArtOne{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end
+  }
+  .imgOne{
+    width: 540px;
+    height: 461.07px;
+    width: 70%;
+  }
+  .artTwo{
+    display: flex;
+    width: 50%;
+  }
+  .h2{
+    width: 60%;
+  }
+  .textImg{
+    width: 60%;
+  }
+  .botonMorado{
+    align-self: center;
+  }
+}
 .h4{
 width: 440px;
 height: 88px;
@@ -150,6 +240,38 @@ color: #FFFFFF;
   width: 100%;
   height: 100%;
 }
+
+/* ------------------------sectionTwo-------------------------------- */
+@media(min-width:1440px){
+  .secTwo{
+    display: flex;
+    background-color:#8B48BF;
+  }
+  .artSecTwo{
+    display: flex ;
+    width: 70%;
+  }
+  .h4{
+    width: 50%;
+  }
+  .mobil{
+    display: block;
+    width: 450px;
+    height: 88px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 151.1%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding-left: 30px;
+  }
+  .mid{
+    display: none;
+  }
+}
+
 .secthree{
   display: flex;
   flex-direction: column;
@@ -160,6 +282,7 @@ color: #FFFFFF;
   display: flex;
 align-items: flex-end;
 flex-direction: column;
+
 }
 .titNum{
 display: flex;
@@ -172,6 +295,8 @@ width: 70px;
 height: 43px;
 background: #8B48BF;
 border-radius: 30px;
+color: #ffffff;
+
 }
 .h4SecThree{
 display: flex;
@@ -183,11 +308,13 @@ width: 446px;
 height: 43px;
 background: rgba(139, 72, 191, 0.3);
 border-radius: 50px 0px 0px 50px;
+font-size: 16px;
+margin-bottom: 18px;
+
 }
 .spaSecThree{
 width: 408px;
 height: 130px;
-font-family: 'Be Vietnam';
 font-style: normal;
 font-weight: 500;
 font-size: 16.2984px;
@@ -195,13 +322,41 @@ line-height: 26px;
 display: flex;
 align-items: center;
 letter-spacing: -0.01em;
-
+padding-right: 40px;
 color: #B3B2B7;
+margin-bottom: 18px;
 }
+
+@media(min-width:1440px){
+    .secthree{
+      background: #FAFAFA;
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: center;
+      flex-direction: row
+      
+      }
+    .artSecThree{
+      display: flex;
+      width: 40%;
+     
+    }
+    .h4SecThree{
+      background-color: white;
+      width: 83%;
+      margin: 10px;
+    }
+
+    .titNum{
+      
+    }
+}
+
 .secFour{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 40px;
 
 }
 .artOneSecFour{
@@ -224,7 +379,7 @@ display: flex;
 align-items: center;
 letter-spacing: -0.01em;
 color: #242E53;
-margin-top: 60px;
+padding-top: 70px;
 text-align: center;
 }
 .jugadores{
@@ -257,7 +412,6 @@ width: 390px;
 height: 78px;
 margin-top: 40px;
 font-style: normal;
-font-weight: 500;
 font-size: 16px;
 line-height: 156.6%;
 display: flex;
@@ -280,20 +434,87 @@ color: #B9B9C1;
   font-weight:500;
   letter-spacing: 1px;
   margin-top: 55px;  
+ 
 }
+
+@media(min-width:1440px){
+  .secFour{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    justify-content: center;
+  }
+  .h2SecFour{
+   
+   width: 100%;
+   padding: 10px;
+   border: 2px;
+   padding-left: 40%;
+
+   }
+  .jugadores{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;padding: 10px;
+    width: 32%;
+   
+  }
+  .nomJug{
+    width: 53px;
+    height: 25px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.0714px;
+    line-height: 156.6%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+
+color: #3F4868;
+  }
+  .textjug{
+  width: 390px;
+height: 78px;
+margin-top: 40px;
+font-style: normal;
+font-size: 16px;
+line-height: 156.6%;
+display: flex;
+align-items: center;
+text-align: center;
+background: #FAFAFA;
+color: #B9B9C1;
+  }
+  .avatarJug{
+    width: 77.81px;
+    height: 71.39px;
+    left: 152.19px;
+    top: -1.39px;
+    margin-top: 50px;
+
+    background: url(image.png);
+  }
+  .botonSecFour{
+    
+   }
+  .artOneSecFour{
+    padding: 10px;
+  }
+  }
+
 .secFive{
 display: flex;
 flex-direction: column;
 align-items: center;
-margin-top: 40px;
 gap: 50px;
 background: #3CDDF3;
+padding-bottom: 50px;
 
 }
 .tituloSecFive{
 width: 324px;
 height: 192px;
-font-family: 'Be Vietnam';
 font-style: normal;
 font-weight: 700;
 font-size: 40px;
@@ -319,9 +540,28 @@ color: #FFFFFF;
   border: none;
   font-weight:500;
   letter-spacing: 1px;
-  margin-top: 55px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   flex-direction: row;
+}
+@media(min-width:1440px){
+  .secFive{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #8B48BF;
+
+  }
+  .tituloSecFive{
+    width: 30%;
+  }
+
+  .botonSecFive{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    color: #8B48BF;
+   margin-top: 50px
+
+  }
 }
 footer{
 display: flex;
@@ -340,7 +580,7 @@ background: #1E1E26;
 }
 .list{
  display: flex;
- width: 100%;
+ width: 400px;
  align-items: center;
  flex-direction: column;
 }
@@ -363,44 +603,47 @@ background: #1E1E26;
 .formulario{
   background: #1E1E26;
   display: flex;
+  gap: 10px;
  }
 .conten{
-  display: flex;
-  align-items: center;
   padding: 10px;
-  gap: 10px;
   width: 308px;
   height: 44px;
   background: #FFFFFF;
   border-radius: 50px;
   border: none;
+  
+  
  }
 .botonForm{ 
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
 padding: 10px;
-gap: 10px;
 width: 63px;
 height: 42px;
 background: #8B48BF;
 border-radius: 50px;
 border: none;
 color:#ffffff;
+
  }
-.redesS{
+#redesS{
   display: flex;
-  width: 100%;
-  justify-content: space-evenly
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  height: 150px;
+  justify-content: space-between;
+  
  }
-.logoFooter{
-display: flex;
+.divLogo{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+
 }
 .derechosFooter{
-width: 213px;
+  width: 100%;
 height: 18px;
-font-family: 'Be Vietnam';
 font-style: normal;
 font-weight: 500;
 font-size: 12.5px;
@@ -408,6 +651,46 @@ line-height: 18px;
 display: flex;
 align-items: center;
 color: #8C8C94;
+justify-content: center
 
  }
+
+
+
+ @media(min-width:1440px){
+  footer{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding: 5rem 2rem;
+  }
+  .formulario{
+
+  }
+  #redesS{
+    display: flex;
+    width: 400px;
+    flex-direction: column-reverse
+  }
+  .logoFooter{
+   text-align: start;
+  } 
+  .listasDiv{
+   width: 38%;
+   padding-right: 40px;
+}
+  .derechosFooter{
+    display: inline-block;
+    text-align: right;
+
+}
+  .list{
+   width: 100%;
+  }
+  .liF{
+    width: 50%;
+  }
+ }
+
+
  
